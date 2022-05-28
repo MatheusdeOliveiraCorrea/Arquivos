@@ -35,8 +35,11 @@ public class Arquivo {
 		
 		//busca um arquivo
 		File arquivo = new 
-	File("C:\\Users\\mathe\\Documents\\JavaWeb\\arquivos\\src\\arquivos\\arquivo.txt"); 
+	File("C:\\Users\\mathe\\git\\arquivos\\arquivos\\src\\arquivos\\arquivo.txt"); 
 		
+		
+		
+		//verificar se o arquivo exite ou não
 		if(!arquivo.exists()) {
 			arquivo.createNewFile(); //se arquivo não existir, cria-se um.
 		}
@@ -53,8 +56,8 @@ public class Arquivo {
 		for (Pessoa pessoa : pessoas) {
 			
 			//escrever.write(" email: " + pessoa.getEmail() + " \n");
-			escrever.write("\n Nome: " + pessoa.getNome() + "; Idade: " + pessoa.getIdade()
-			+ "; Email: " + pessoa.getEmail());
+			escrever.write(pessoa.getNome() + ";" + pessoa.getEmail()+";"+ pessoa.getIdade()+ "\n" );
+			
 			
 		}
 		

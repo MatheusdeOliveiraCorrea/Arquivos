@@ -13,7 +13,7 @@ public class LerArquivo {
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		File arquivo = 
-				new File("C:\\\\Users\\\\mathe\\\\Documents\\\\JavaWeb\\\\arquivos\\\\src\\\\arquivos\\\\arquivo.txt"); 
+				new File("C:\\Users\\mathe\\git\\arquivos\\arquivos\\src\\arquivos\\arquivo.txt"); 
 		
 		FileInputStream entrada = new FileInputStream(arquivo);
 		
@@ -33,13 +33,12 @@ public class LerArquivo {
 				
 				String[] dados = linha.split(";");
 				
+				
 				Pessoa pessoa = new Pessoa(); 
 				
 				pessoa.setNome(dados[0]);
-				
-				pessoa.setIdade(Integer.parseInt(dados[1]));
-				pessoa.setEmail(dados[2]);
-				
+				pessoa.setEmail(dados[1]);
+				pessoa.setIdade(Integer.parseInt(dados[2]));
 				
 				listaPessoas.add(pessoa);
 
@@ -48,6 +47,11 @@ public class LerArquivo {
 		}
 	
 	
+		for(Pessoa pessoa: listaPessoas) {
+		
+		System.out.println(pessoa);
+		
+		}
 	
 	}
 	

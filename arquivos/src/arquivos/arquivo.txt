@@ -1,4 +1,3 @@
-
- Nome: Matheus; Idade: 17; Email: matheus-email.com
- Nome: Paulo; Idade: 22; Email: paulo-gmailgames.com
- Nome: Carlos; Idade: 35; Email: carluxo17.com
+Matheus;matheus-email.com;17
+Paulo;paulo-gmailgames.com;22
+Carlos;carluxo17.com;35
