@@ -1,5 +1,9 @@
 package arquivos;
 
+	/*
+	 * Um simples objeto para manipular durante as aulas de Apache POI
+	 */
+
 public class Pessoa {
 
 	private String nome; 

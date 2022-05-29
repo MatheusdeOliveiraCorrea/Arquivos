@@ -1,13 +1,20 @@
 package arquivos;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class Arquivo {
+	
+	/*
+	 * Objetivo: 
+	 * Escrever dados de um objeto em um arquivo txt
+	 */
 
 	public static void main(String[] args) throws IOException {
 		
@@ -35,7 +42,7 @@ public class Arquivo {
 		
 		//busca um arquivo
 		File arquivo = new 
-	File("C:\\Users\\mathe\\git\\arquivos\\arquivos\\src\\arquivos\\arquivo.txt"); 
+	File("C:\\Users\\mathe\\git\\arquivos\\arquivos\\src\\arquivos\\arquivo.csv"); 
 		
 		
 		
@@ -46,7 +53,7 @@ public class Arquivo {
 		
 		
 		//Classe para escrever em um arquivo
-		FileWriter escrever = new FileWriter(arquivo);
+		OutputStreamWriter escrever = new OutputStreamWriter(new FileOutputStream(arquivo));
 		
 		
 		/*

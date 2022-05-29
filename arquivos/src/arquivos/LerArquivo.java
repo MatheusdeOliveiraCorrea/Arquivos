@@ -9,11 +9,20 @@ import java.util.Scanner;
 
 public class LerArquivo {
 
+	/*
+	 * Objetivo:
+	 * Ler um domento txt e mostrar dados no console
+	 */
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		
+		
+		//path do arquivo
 		File arquivo = 
-				new File("C:\\Users\\mathe\\git\\arquivos\\arquivos\\src\\arquivos\\arquivo.txt"); 
+		new File("C:\\Users\\mathe\\git\\arquivos\\arquivos\\src\\arquivos\\arquivo.txt"); 
+		
+
+		
 		
 		FileInputStream entrada = new FileInputStream(arquivo);
 		
@@ -27,7 +36,7 @@ public class LerArquivo {
 		while(lerArquivo.hasNext()) {
 			
 			String linha = lerArquivo.nextLine(); 
-			
+			System.out.println(linha);
 			
 			if(linha != null && !linha.isEmpty()) {
 				
@@ -46,10 +55,13 @@ public class LerArquivo {
 			
 		}
 	
-	
+		
+		
+		
+		
 		for(Pessoa pessoa: listaPessoas) {
 		
-		System.out.println(pessoa);
+		//System.out.println(pessoa);
 		
 		}
 	
